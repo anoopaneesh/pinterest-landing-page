@@ -1,9 +1,9 @@
 import '../styles/Dashboard.css'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { usePinContext } from '../api/context'
 import Pin from './Pin'
 const Dashboard = () => {
-    const [pins,getPhotos] = usePinContext()
+    const {pins} = usePinContext()
     return (
         <div className="dashboard">
 

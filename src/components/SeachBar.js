@@ -5,7 +5,7 @@ import { IconButton } from '@material-ui/core';
 import { usePinContext } from '../api/context';
 
 const SeachBar = () => {
-    const [pins,getPhotos] = usePinContext()
+    const {getPhotos} = usePinContext()
     const [query,setQuery] = useState("")
     const handleChange = (e) => {
         setQuery(e.target.value)

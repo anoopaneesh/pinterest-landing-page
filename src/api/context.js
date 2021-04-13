@@ -11,6 +11,7 @@ export const PinProvider = ({children}) => {
             let urls = []
             data.map((e) => {
                 urls.push({ url: e.urls.regular, id: e.id });
+                return 1;
             })
             setPins(urls)
         })
@@ -20,12 +21,14 @@ export const PinProvider = ({children}) => {
             let urls = []
             data.map((e) => {
                 urls.push({ url: e.urls.regular, id: e.id });
+                return 1;
             })
             setPins(urls)
+           
         })
     }
     return (
-        <PinContext.Provider value={[pins,getPhotos]}>
+        <PinContext.Provider value={{pins,getPhotos}}>
             {children}
         </PinContext.Provider>
     )
