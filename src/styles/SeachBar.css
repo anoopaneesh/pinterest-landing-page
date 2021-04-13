@@ -1,0 +1,22 @@
+.searchbar{
+    width: 800px;
+    display: flex;
+
+}
+.searchbar input{
+    width: 100%;
+    padding: 10px 20px;
+    border:1px solid grey;
+    border-radius:20px;
+}
+.searchbar input:focus-visible{
+    outline:none;
+    border-color: red;
+}
+
+
+@media(max-width:500px){
+    .searchbar{
+        width: 100%;
+        }
+}
